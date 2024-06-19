@@ -18,12 +18,12 @@ public class MySecondTest {
   @Test
   public void test() {
     driver.get(BASE_URL);
-    //driver.findElement(By.name("email")).sendKeys("DusanCinkota@gmail.com");
-    //driver.findElement(By.className("form-control")).sendKeys("DusanCinkota@gmail.com");
-    //driver.findElement(By.tagName("input")).sendKeys("DusanCinkota@gmail.com");
-    /*driver.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("DusanCinkota@gmail.com");
+    driver.findElement(By.name("email")).sendKeys("DusanCinkota@gmail.com");
+    driver.findElement(By.className("form-control")).sendKeys("DusanCinkota@gmail.com");
+    driver.findElement(By.tagName("input")).sendKeys("DusanCinkota@gmail.com");
+    driver.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("DusanCinkota@gmail.com");
     driver.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("Dušan");
-    driver.findElement(By.xpath("/html/body/div/div/form/div[3]/input")).sendKeys("Cinkota");*/
+    driver.findElement(By.xpath("/html/body/div/div/form/div[3]/input")).sendKeys("Cinkota");
 
     driver.findElement(By.xpath("//form/div[1]/input")).sendKeys("DusanCinkota@gmail.com");
     driver.findElement(By.xpath("//form/div[2]/input")).sendKeys("Dusan");

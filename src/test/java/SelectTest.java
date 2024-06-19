@@ -20,8 +20,6 @@ public class SelectTest {
         @Test
         public void test() {
             driver.get(BASE_URL);
-            /*new Select(driver.findElement(By.className("form-control"))).selectByIndex(1);
-            new Select(driver.findElement(By.className("form-control"))).selectByValue("02");*/
             new Select(driver.findElement(By.className("form-control"))).selectByVisibleText("Pikachu");
             System.out.println(driver.findElement(By.xpath("//div/h3")).getText());
             Assert.assertTrue(driver.findElement(By.xpath("//div/h3")).getText().contains("Pikachu"));

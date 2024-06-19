@@ -25,19 +25,9 @@ public class TabulkaTest {
         driver.get(BASE_URL);
         List<WebElement> rows = driver.findElements(By.xpath("//table/tbody/tr"));
         for (WebElement row : rows) {
-            //System.out.println(row.getText());
-            //System.out.println(row.findElement(By.xpath("./td[3]")).getText());
             Assert.assertFalse(row.findElement(By.xpath("./td[3]")).getText().isEmpty());
         }
 
-
-        //System.out.println(driver.findElement(By.xpath("//table/tbody/tr[last()]/td[1]")).getText());
-        /*int rows = Integer.parseInt(driver.findElement(By.xpath("//table/tbody/tr[last()]/td[1]")).getText());
-
-        for (int i = 1; i < rows; i++) {
-            System.out.println(driver.findElement(By.xpath("//table/tbody/tr[" + i + "]/td[3]")).getText().isEmpty());
-        }
-*/
     }
     @After
     public void tearDown() {

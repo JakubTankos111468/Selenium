@@ -24,14 +24,14 @@ public class ColourTest {
     public void test() throws InterruptedException{
         driver.get(BASE_URL);
 
-        /*List<WebElement> titles = driver.findElements(By.xpath("//div[contains(@class, 'colours')]/h1"));
+        List<WebElement> titles = driver.findElements(By.xpath("//div[contains(@class, 'colours')]/h1"));
         for (WebElement title : titles) {
             System.out.println(title.getText());
             System.out.println(title.getCssValue("color"));
             String hexColor;
             hexColor = Color.fromString(title.getCssValue("color")).asHex();
             System.out.println(hexColor);
-        }*/
+        }
 
         String rgba = driver.findElement(By.xpath("//div[contains(@class, 'colours')]/h1[1]")).getCssValue("color");
         String hexColor = Color.fromString(rgba).asHex();

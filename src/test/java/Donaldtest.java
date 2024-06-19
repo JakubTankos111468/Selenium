@@ -8,8 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-
 public class Donaldtest {
     private WebDriver driver;
     private final String BASE_URL = "http://localhost/playground/moveme.php";
